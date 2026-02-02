@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 23:50+0200\n"
+"POT-Creation-Date: 2026-02-03 00:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,33 +26,236 @@ msgstr ""
 msgid "Indonesia"
 msgstr ""
 
-#: templates/index.html:738
+#: templates/index.html:21
+msgid ""
+"I'm a full stack web developer specializing in building scalable web "
+"applications and automation solutions."
+msgstr ""
+"Saya adalah full stack developer yang berspesialisasi dalam membangun aplikasi web "
+"yang terukur dan solusi otomasi."
+
+#: templates/index.html:24
+msgid ""
+"Passionate about creating automation systems for Telegram and WhatsApp to "
+"streamline business processes."
+msgstr ""
+"Bersemangat dalam menciptakan sistem otomasi untuk Telegram dan WhatsApp "
+"guna menyederhanakan proses bisnis."
+
+#: templates/index.html:64
+msgid "Get in touch"
+msgstr "Hubungi Saya"
+
+#: templates/index.html:123
+#, fuzzy
+#| msgid "About"
+msgid "About Me"
+msgstr "Tentang Saya"
+
+#: templates/index.html:129
+msgid ""
+"I'm a passionate full stack developer with 4+ years of experience building "
+"web applications that solve real-world problems. My expertise spans across "
+"both frontend and backend development, with a strong focus on creating "
+"efficient, scalable, and user-friendly solutions."
+msgstr ""
+"Saya adalah full stack developer dengan pengalaman 4+ tahun membangun "
+"aplikasi web yang menyelesaikan masalah nyata. Keahlian saya mencakup "
+"pengembangan frontend dan backend, dengan fokus kuat pada penciptaan "
+"solusi yang efisien, terukur, dan ramah pengguna."
+
+#: templates/index.html:132
+msgid ""
+"Beyond traditional web development, I specialize in automation solutions, "
+"particularly in building intelligent bots for Telegram and WhatsApp that "
+"streamline business processes and enhance user engagement."
+msgstr ""
+"Selain pengembangan web tradisional, saya berspesialisasi dalam solusi otomasi, "
+"khususnya dalam membangun bot cerdas untuk Telegram dan WhatsApp yang "
+"menyederhanakan proses bisnis dan meningkatkan keterlibatan pengguna."
+
+#: templates/index.html:136
+msgid "Technical Skills"
+msgstr "Keterampilan Teknis"
+
+#: templates/index.html:140
+msgid "Programming Languages"
+msgstr "Bahasa Pemrograman"
+
+#: templates/index.html:180 templates/snippets/footer.html:24
+#: templates/snippets/header.html:152 templates/snippets/header.html:164
+#: templates/snippets/header.html:191
+msgid "Experience"
+msgstr "Pengalaman"
+
+#: templates/index.html:192
+msgid "PRESENT"
+msgstr "SEKARANG"
+
+#: templates/index.html:199 templates/index.html:257
+msgid "Full Stack Developer"
+msgstr "Full Stack Developer"
+
+#: templates/index.html:212
+msgid ""
+"Developing comprehensive travel agency platform for Hajj, Umrah, and tour "
+"packages"
+msgstr ""
+"Mengembangkan platform agen perjalanan komprehensif untuk paket Haji, Umrah, dan tur"
+
+#: templates/index.html:220
+msgid "Built booking management system with Django and Tailwind CSS"
+msgstr "Membangun sistem manajemen pemesanan dengan Django dan Tailwind CSS"
+
+#: templates/index.html:228
+msgid "Implemented customer dashboard and payment integration system"
+msgstr "Mengimplementasikan dashboard pelanggan dan sistem integrasi pembayaran"
+
+#: templates/index.html:236
+msgid "Managing full-stack development from frontend to backend deployment"
+msgstr "Mengelola pengembangan full-stack dari frontend hingga deployment backend"
+
+#: templates/index.html:270
+msgid "Built marketplace platform connecting jastip providers with customers"
+msgstr "Membangun platform marketplace yang menghubungkan penyedia jastip dengan pelanggan"
+
+#: templates/index.html:278
+msgid "Developed provider dashboard with flight details and order management"
+msgstr "Mengembangkan dashboard penyedia dengan detail penerbangan dan manajemen pesanan"
+
+#: templates/index.html:286
+msgid "Implemented search and filtering system for jastip services"
+msgstr "Mengimplementasikan sistem pencarian dan penyaringan untuk layanan jastip"
+
+#: templates/index.html:294
+msgid "Created booking workflow and real-time notification system"
+msgstr "Membuat alur pemesanan dan sistem notifikasi real-time"
+
+#: templates/index.html:318
+#, fuzzy
+#| msgid "Projects"
+msgid "Freelance Projects"
+msgstr "Proyek Freelance"
+
+#: templates/index.html:328
+msgid "Built 30+ Telegram and WhatsApp bots for business automation"
+msgstr "Membangun 30+ bot Telegram dan WhatsApp untuk otomasi bisnis"
+
+#: templates/index.html:336
+msgid "Developed CRM integrations with messaging platforms"
+msgstr "Mengembangkan integrasi CRM dengan platform pesan"
+
+#: templates/index.html:344
+msgid "Created automated customer support systems with AI responses"
+msgstr "Membuat sistem dukungan pelanggan otomatis dengan respons AI"
+
+#: templates/index.html:352
+msgid "Implemented bulk messaging and scheduled notification features"
+msgstr "Mengimplementasikan fitur pesan massal dan notifikasi terjadwal"
+
+#: templates/index.html:365
+#, fuzzy
+#| msgid "Projects"
+msgid "Featured Projects"
+msgstr "Proyek Unggulan"
+
+#: templates/index.html:395
+msgid ""
+"Dynamic travel agency platform for Hajj, Umrah, and tour packages with full "
+"admin control. Admin can create, edit, and delete packages directly from "
+"dashboard."
+msgstr ""
+"Platform agen perjalanan dinamis untuk paket Haji, Umrah, dan tur dengan kontrol admin penuh. "
+"Admin dapat membuat, mengedit, dan menghapus paket langsung dari dashboard."
+
+#: templates/index.html:426 templates/index.html:500 templates/index.html:574
+msgid "View Case Study"
+msgstr "Lihat Studi Kasus"
+
+#: templates/index.html:465
+msgid ""
+"Jastip marketplace platform connecting travelers and customers in Egypt. "
+"Date-based baggage search with flight registration and analytics dashboard "
+"for tracking WhatsApp engagement."
+msgstr ""
+"Platform marketplace jastip yang menghubungkan traveler dan pelanggan di Mesir. "
+"Pencarian bagasi berdasarkan tanggal dengan registrasi penerbangan dan dashboard analitik "
+"untuk melacak total klik yang mengarah ke WhatsApp traveler."
+
+#: templates/index.html:539
+msgid ""
+"Automated blacklist alert system for Indonesian students in Egypt. Telegram "
+"bot with location-based search and Django Admin dashboard with Leaflet map "
+"integration."
+msgstr ""
+"Sistem peringatan blacklist otomatis untuk mahasiswa Indonesia di Mesir. "
+"Bot Telegram dengan pencarian berbasis lokasi dan dashboard Django Admin dengan "
+"integrasi peta Leaflet."
+
+#: templates/index.html:594
+msgid "Automation Projects"
+msgstr "Proyek Otomasi"
+
+#: templates/index.html:597
+msgid ""
+"Specialized in building automation solutions for Telegram and WhatsApp that "
+"help businesses streamline operations and improve customer engagement."
+msgstr ""
+"Berspesialisasi dalam membangun solusi otomasi untuk Telegram dan WhatsApp yang "
+"membantu bisnis menyederhanakan operasi dan meningkatkan keterlibatan pelanggan."
+
+#: templates/index.html:622
+msgid ""
+"Reusable framework for rapid Telegram bot development with built-in user "
+"management, payment processing, and webhook integration."
+msgstr ""
+"Framework yang dapat digunakan kembali untuk pengembangan bot Telegram cepat dengan "
+"manajemen pengguna bawaan, pemrosesan pembayaran, dan integrasi webhook."
+
+#: templates/index.html:658
+msgid ""
+"Smart auto-responder system with keyword detection, scheduled messages, and "
+"multi-agent support. Handles 50K+ messages monthly."
+msgstr ""
+"Sistem auto-responder cerdas dengan deteksi kata kunci, pesan terjadwal, dan "
+"dukungan multi-agen. Menangani 50K+ pesan per bulan."
+
+#: templates/index.html:691
+msgid ""
+"Unified system for managing campaigns across Website, Telegram and WhatsApp "
+"with broadcast messaging and analytics tracking."
+msgstr ""
+"Sistem terpadu untuk mengelola kampanye di Website, Telegram, dan WhatsApp "
+"dengan pesan siaran dan pelacakan analitik."
+
+
+#: templates/index.html:713
 msgid "Let's Work Together"
 msgstr "Mari Bekerja Sama"
 
-#: templates/index.html:741
+#: templates/index.html:716
 msgid ""
 "I'm always interested in hearing about new projects and opportunities. "
 "Whether you need a full stack developer or automation specialist, feel free "
 "to reach out."
 msgstr ""
-"Saya selalu tertarik mendengar tentang proyek dan peluang baru. "
-"Baik Anda membutuhkan full stack developer atau spesialis automasi, jangan ragu "
-"untuk menghubungi saya."
+"Saya selalu tertarik mendengar tentang proyek dan peluang baru. Baik Anda "
+"membutuhkan full stack developer atau spesialis automasi, jangan ragu untuk "
+"menghubungi saya."
 
-#: templates/index.html:757
+#: templates/index.html:732
 msgid "Phone"
 msgstr "Telepon"
 
-#: templates/index.html:766
+#: templates/index.html:741
 msgid "Location"
 msgstr "Lokasi"
 
-#: templates/index.html:767
+#: templates/index.html:742
 msgid "Cairo, Egypt"
 msgstr "Kairo, Mesir"
 
-#: templates/index.html:770 templates/snippets/footer.html:41
+#: templates/index.html:745 templates/snippets/footer.html:41
 msgid "Connect"
 msgstr "Hubungi"
 
@@ -72,11 +275,6 @@ msgstr "Tautan Cepat"
 #: templates/snippets/header.html:163 templates/snippets/header.html:189
 msgid "About"
 msgstr "Tentang"
-
-#: templates/snippets/footer.html:24 templates/snippets/header.html:152
-#: templates/snippets/header.html:164 templates/snippets/header.html:191
-msgid "Experience"
-msgstr "Pengalaman"
 
 #: templates/snippets/footer.html:30 templates/snippets/header.html:154
 #: templates/snippets/header.html:165 templates/snippets/header.html:193
