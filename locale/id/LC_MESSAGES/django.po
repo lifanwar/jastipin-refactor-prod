@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 23:22+0200\n"
+"POT-Creation-Date: 2026-02-02 23:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,36 @@ msgstr ""
 #: config/settings/base.py:72
 msgid "Indonesia"
 msgstr ""
+
+#: templates/index.html:738
+msgid "Let's Work Together"
+msgstr "Mari Bekerja Sama"
+
+#: templates/index.html:741
+msgid ""
+"I'm always interested in hearing about new projects and opportunities. "
+"Whether you need a full stack developer or automation specialist, feel free "
+"to reach out."
+msgstr ""
+"Saya selalu tertarik mendengar tentang proyek dan peluang baru. "
+"Baik Anda membutuhkan full stack developer atau spesialis automasi, jangan ragu "
+"untuk menghubungi saya."
+
+#: templates/index.html:757
+msgid "Phone"
+msgstr "Telepon"
+
+#: templates/index.html:766
+msgid "Location"
+msgstr "Lokasi"
+
+#: templates/index.html:767
+msgid "Cairo, Egypt"
+msgstr "Kairo, Mesir"
+
+#: templates/index.html:770 templates/snippets/footer.html:41
+msgid "Connect"
+msgstr "Hubungi"
 
 #: templates/snippets/footer.html:8
 msgid ""
@@ -57,10 +87,6 @@ msgstr "Proyek"
 #: templates/snippets/header.html:166 templates/snippets/header.html:195
 msgid "Contact"
 msgstr "Kontak"
-
-#: templates/snippets/footer.html:41
-msgid "Connect"
-msgstr "Hubungi"
 
 #: templates/snippets/footer.html:50
 msgid "Email"
