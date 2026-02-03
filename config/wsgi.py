@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from django.core.wsgi import get_wsgi_application
 
 load_dotenv()
-setup = os.getenv('DJANGO_ENV', 'dev')  # Default to 'development' if not found
+setup = os.getenv('DJANGO_ENV', 'dev')
 if not setup:
     raise EnvironmentError("DJANGO_ENV not set. Ensure the environment variable is configured correctly.")
 
