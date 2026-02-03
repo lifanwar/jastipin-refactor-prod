@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-03 00:11+0200\n"
+"POT-Creation-Date: 2026-02-03 12:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,292 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: apps/showcase/templates/showcase/dkkm.html:29
+msgid ""
+"Automated Blacklist Alert System & Admin Dashboard for Indonesian Students "
+"in Egypt"
+msgstr ""
+"Sistem Peringatan Blacklist Otomatis dan Dashboard Admin untuk Mahasiswa "
+"Indonesia di Mesir"
+
+#: apps/showcase/templates/showcase/dkkm.html:66
+#, fuzzy
+#| msgid "View Case Study"
+msgid "Read Case Study"
+msgstr "Baca Studi Kasus"
+
+#: apps/showcase/templates/showcase/dkkm.html:72
+#, fuzzy
+#| msgid "Get in touch"
+msgid "Get in Touch"
+msgstr "Hubungi Saya"
+
+#: apps/showcase/templates/showcase/dkkm.html:116
+#, fuzzy
+#| msgid "Projects"
+msgid "Project Info"
+msgstr "Info Proyek"
+
+#: apps/showcase/templates/showcase/dkkm.html:167
+msgid "Overview"
+msgstr "Gambaran Umum"
+
+#: apps/showcase/templates/showcase/dkkm.html:172
+msgid ""
+"DKM Real Estate Platform is a comprehensive automation solution designed to "
+"help Indonesian students in Egypt identify blacklisted properties quickly "
+"and efficiently. The system consists of a Telegram bot for instant property "
+"alerts and an admin dashboard for centralized data management."
+msgstr ""
+"DKM Real Estate Platform adalah solusi otomasi komprehensif yang dirancang "
+"untuk membantu mahasiswa Indonesia di Mesir mengidentifikasi properti yang "
+"masuk daftar blacklist dengan cepat dan efisien. Sistem ini terdiri dari bot "
+"Telegram untuk memberikan peringatan properti secara instan dan dashboard "
+"admin untuk pengelolaan data terpusat."
+
+#: apps/showcase/templates/showcase/dkkm.html:176
+msgid ""
+"Previously, blacklist information was scattered across WhatsApp channels and "
+"Instagram story highlights, making it difficult for students to access "
+"current data. Outdated listings remained visible, and properties that had "
+"been cleared were still marked as problematic. This platform centralizes all "
+"information with real-time updates, location-based search via Telegram bot, "
+"and comprehensive Django Admin dashboard with Leaflet map integration."
+msgstr ""
+"Sebelumnya, informasi blacklist tersebar di berbagai kanal WhatsApp dan "
+"sorotan cerita Instagram, sehingga menyulitkan mahasiswa untuk mengakses "
+"data terbaru. Daftar lama yang sudah tidak relevan masih tetap terlihat, dan "
+"properti yang telah dinyatakan bersih masih tertandai bermasalah. Platform "
+"ini memusatkan seluruh informasi dengan pembaruan secara real-time, "
+"pencarian berbasis lokasi melalui bot Telegram, serta dashboard Django Admin "
+"lengkap dengan integrasi peta Leaflet."
+
+#: apps/showcase/templates/showcase/dkkm.html:183
+msgid ""
+"Transforming fragmented housing warnings into an automated, location-based "
+"alert system with centralized management."
+msgstr ""
+"Mengubah peringatan hunian yang terpencar menjadi sistem peringatan otomatis "
+"berbasis lokasi dengan pengelolaan terpusat."
+
+#: apps/showcase/templates/showcase/dkkm.html:196
+msgid "The Challenge"
+msgstr "Tantangan"
+
+#: apps/showcase/templates/showcase/dkkm.html:210
+msgid "Fragmented Data"
+msgstr "Data Terpencar"
+
+#: apps/showcase/templates/showcase/dkkm.html:213
+msgid ""
+"Property blacklist information was scattered across WhatsApp channels and "
+"Instagram story highlights, requiring students to manually check multiple "
+"sources regularly to stay updated."
+msgstr ""
+"Informasi blacklist properti tersebar di berbagai kanal WhatsApp dan sorotan "
+"cerita Instagram, sehingga mahasiswa harus memeriksa banyak sumber secara "
+"manual dan rutin untuk tetap mendapatkan informasi terkini."
+
+#: apps/showcase/templates/showcase/dkkm.html:227
+msgid "Outdated Records"
+msgstr "Data Kedaluwarsa"
+
+#: apps/showcase/templates/showcase/dkkm.html:230
+msgid ""
+"Properties cleared from blacklist remained in old posts, while newly "
+"problematic units weren't quickly documented, causing confusion and "
+"misinformation among students."
+msgstr ""
+"Properti yang sebenarnya sudah keluar dari daftar blacklist masih muncul di "
+"unggahan lama, sementara unit bermasalah yang baru tidak segera "
+"terdokumentasi. Hal ini menimbulkan kebingungan dan misinformasi di kalangan "
+"mahasiswa."
+
+#: apps/showcase/templates/showcase/dkkm.html:241
+msgid "The Solution"
+msgstr "Solusi"
+
+#: apps/showcase/templates/showcase/dkkm.html:258
+msgid ""
+"Students can share their location via Telegram to instantly receive "
+"information about nearby blacklisted properties, complete with building "
+"details, unit numbers, owner info, and blacklist reasons."
+msgstr ""
+"Mahasiswa dapat membagikan lokasi mereka melalui Telegram untuk langsung "
+"mendapatkan informasi tentang properti di sekitar yang masuk blacklist, "
+"dilengkapi detail gedung, nomor unit, informasi pemilik, dan alasan "
+"pencantuman blacklist."
+
+#: apps/showcase/templates/showcase/dkkm.html:262
+#, fuzzy
+#| msgid "Location"
+msgid "Location Sharing"
+msgstr "Berbagi Lokasi"
+
+#: apps/showcase/templates/showcase/dkkm.html:265
+msgid "Instant Alerts"
+msgstr "Peringatan Instan"
+
+#: apps/showcase/templates/showcase/dkkm.html:268
+msgid "Proximity Search"
+msgstr "Pencarian Berdasarkan Kedekatan"
+
+#: apps/showcase/templates/showcase/dkkm.html:284
+msgid "Leaflet-Integrated Dashboard"
+msgstr "Dashboard Terintegrasi dengan Leaflet"
+
+#: apps/showcase/templates/showcase/dkkm.html:288
+msgid ""
+"Django Admin dashboard with Leaflet.js map integration allows DKKM staff to "
+"create, edit, and manage buildings and units with precise location mapping "
+"using OpenStreetMap for accurate proximity searches."
+msgstr ""
+"Dashboard Django Admin dengan integrasi peta Leaflet.js memungkinkan staf "
+"DKKM membuat, mengubah, dan mengelola gedung serta unit dengan pemetaan "
+"lokasi yang presisi menggunakan OpenStreetMap untuk pencarian jarak yang "
+"lebih akurat."
+
+#: apps/showcase/templates/showcase/dkkm.html:298
+#, fuzzy
+#| msgid "Location"
+msgid "Location Pins"
+msgstr "Penanda Lokasi"
+
+#: apps/showcase/templates/showcase/dkkm.html:313
+msgid "Real-Time Sync"
+msgstr "Sinkronisasi Real-Time"
+
+#: apps/showcase/templates/showcase/dkkm.html:316
+msgid ""
+"Centralized PostgreSQL database ensures both bot and dashboard access the "
+"same up-to-date information, eliminating discrepancies and outdated "
+"blacklist data."
+msgstr ""
+"Basis data PostgreSQL terpusat memastikan bot dan dashboard mengakses "
+"informasi yang sama dan selalu terbaru, sehingga menghilangkan "
+"ketidaksesuaian serta data blacklist yang kedaluwarsa."
+
+#: apps/showcase/templates/showcase/dkkm.html:323
+msgid "Auto Updates"
+msgstr "Pembaruan Otomatis"
+
+#: apps/showcase/templates/showcase/dkkm.html:326
+msgid "Data Consistency"
+msgstr "Konsistensi Data"
+
+#: apps/showcase/templates/showcase/dkkm.html:342
+msgid "Comprehensive Management"
+msgstr "Manajemen Menyeluruh"
+
+#: apps/showcase/templates/showcase/dkkm.html:346
+msgid ""
+"Admin interface allows complete control over buildings, units, and blacklist "
+"status with detailed forms, search filters, and batch operations for "
+"efficient data management."
+msgstr ""
+"Antarmuka admin memberikan kendali penuh atas gedung, unit, dan status "
+"blacklist melalui formulir yang detail, filter pencarian, dan operasi massal "
+"untuk pengelolaan data yang lebih efisien."
+
+#: apps/showcase/templates/showcase/dkkm.html:356
+msgid "Batch Updates"
+msgstr "Pembaruan Massal"
+
+#: apps/showcase/templates/showcase/dkkm.html:368
+msgid "Key Features"
+msgstr "Fitur Utama"
+
+#: apps/showcase/templates/showcase/dkkm.html:382
+msgid "Location-Based Bot Search"
+msgstr "Pencarian Bot Berbasis Lokasi"
+
+#: apps/showcase/templates/showcase/dkkm.html:387
+msgid ""
+"Students share their location in Telegram to instantly discover nearby "
+"buildings with blacklisted units, sorted by proximity with complete property "
+"details."
+msgstr ""
+"Mahasiswa membagikan lokasi mereka di Telegram untuk langsung menemukan "
+"gedung di sekitar yang memiliki unit blacklist, diurutkan berdasarkan jarak "
+"dengan detail properti yang lengkap."
+
+#: apps/showcase/templates/showcase/dkkm.html:394
+msgid "GPS coordinate detection"
+msgstr "Deteksi koordinat GPS"
+
+#: apps/showcase/templates/showcase/dkkm.html:401
+msgid "Radius-based property search"
+msgstr "Pencarian properti berbasis radius"
+
+#: apps/showcase/templates/showcase/dkkm.html:408
+msgid "Building and unit details"
+msgstr "Detail gedung dan unit"
+
+#: apps/showcase/templates/showcase/dkkm.html:415
+msgid "Owner info and blacklist reasons"
+msgstr "Informasi pemilik dan alasan blacklist"
+
+#: apps/showcase/templates/showcase/dkkm.html:460
+msgid "Django Admin with Leaflet Maps"
+msgstr "Django Admin dengan Peta Leaflet"
+
+#: apps/showcase/templates/showcase/dkkm.html:465
+msgid ""
+"Comprehensive Django Admin interface with Leaflet.js integration for "
+"managing buildings, units, and blacklist status with precise location "
+"mapping and visual property management on OpenStreetMap."
+msgstr ""
+"Antarmuka Django Admin yang lengkap dengan integrasi Leaflet.js untuk "
+"mengelola gedung, unit, dan status blacklist dengan pemetaan lokasi yang "
+"presisi serta pengelolaan properti secara visual di OpenStreetMap."
+
+#: apps/showcase/templates/showcase/dkkm.html:473
+msgid "Interactive Leaflet map interface"
+msgstr "Antarmuka peta Leaflet yang interaktif"
+
+#: apps/showcase/templates/showcase/dkkm.html:481
+msgid "Create/edit buildings & units"
+msgstr "Membuat/mengedit gedung dan unit"
+
+#: apps/showcase/templates/showcase/dkkm.html:489
+msgid "Pin locations on OpenStreetMap"
+msgstr "Memberi pin lokasi di OpenStreetMap"
+
+#: apps/showcase/templates/showcase/dkkm.html:496
+msgid "Manage blacklist status"
+msgstr "Mengelola status blacklist"
+
+#: apps/showcase/templates/showcase/dkkm.html:512
+msgid "Real-Time Data Management"
+msgstr "Manajemen Data Real-Time"
+
+#: apps/showcase/templates/showcase/dkkm.html:517
+msgid ""
+"Centralized database ensures instant synchronization between bot and "
+"dashboard, with automatic updates when properties are added, modified, or "
+"removed from blacklist."
+msgstr ""
+"Basis data terpusat memastikan sinkronisasi instan antara bot dan dashboard, "
+"dengan pembaruan otomatis ketika properti ditambahkan, diubah, atau dihapus "
+"dari daftar blacklist."
+
+#: apps/showcase/templates/showcase/dkkm.html:525
+msgid "Live database synchronization"
+msgstr "Sinkronisasi basis data secara langsung"
+
+#: apps/showcase/templates/showcase/dkkm.html:532
+msgid "Instant bot updates"
+msgstr "Pembaruan bot secara instan"
+
+#: apps/showcase/templates/showcase/dkkm.html:538
+msgid "Status change tracking"
+msgstr "Pelacakan perubahan status"
+
+#: apps/showcase/templates/showcase/dkkm.html:544
+msgid "Audit log for changes"
+msgstr "Log audit untuk setiap perubahan"
+
 
 #: config/settings/base.py:71
 msgid "English"
@@ -31,8 +317,8 @@ msgid ""
 "I'm a full stack web developer specializing in building scalable web "
 "applications and automation solutions."
 msgstr ""
-"Saya adalah full stack developer yang berspesialisasi dalam membangun aplikasi web "
-"yang terukur dan solusi otomasi."
+"Saya adalah full stack developer yang berspesialisasi dalam membangun "
+"aplikasi web yang terukur dan solusi otomasi."
 
 #: templates/index.html:24
 msgid ""
@@ -61,8 +347,8 @@ msgid ""
 msgstr ""
 "Saya adalah full stack developer dengan pengalaman 4+ tahun membangun "
 "aplikasi web yang menyelesaikan masalah nyata. Keahlian saya mencakup "
-"pengembangan frontend dan backend, dengan fokus kuat pada penciptaan "
-"solusi yang efisien, terukur, dan ramah pengguna."
+"pengembangan frontend dan backend, dengan fokus kuat pada penciptaan solusi "
+"yang efisien, terukur, dan ramah pengguna."
 
 #: templates/index.html:132
 msgid ""
@@ -70,9 +356,9 @@ msgid ""
 "particularly in building intelligent bots for Telegram and WhatsApp that "
 "streamline business processes and enhance user engagement."
 msgstr ""
-"Selain pengembangan web tradisional, saya berspesialisasi dalam solusi otomasi, "
-"khususnya dalam membangun bot cerdas untuk Telegram dan WhatsApp yang "
-"menyederhanakan proses bisnis dan meningkatkan keterlibatan pengguna."
+"Selain pengembangan web tradisional, saya berspesialisasi dalam solusi "
+"otomasi, khususnya dalam membangun bot cerdas untuk Telegram dan WhatsApp "
+"yang menyederhanakan proses bisnis dan meningkatkan keterlibatan pengguna."
 
 #: templates/index.html:136
 msgid "Technical Skills"
@@ -101,7 +387,8 @@ msgid ""
 "Developing comprehensive travel agency platform for Hajj, Umrah, and tour "
 "packages"
 msgstr ""
-"Mengembangkan platform agen perjalanan komprehensif untuk paket Haji, Umrah, dan tur"
+"Mengembangkan platform agen perjalanan komprehensif untuk paket Haji, Umrah, "
+"dan tur"
 
 #: templates/index.html:220
 msgid "Built booking management system with Django and Tailwind CSS"
@@ -109,23 +396,30 @@ msgstr "Membangun sistem manajemen pemesanan dengan Django dan Tailwind CSS"
 
 #: templates/index.html:228
 msgid "Implemented customer dashboard and payment integration system"
-msgstr "Mengimplementasikan dashboard pelanggan dan sistem integrasi pembayaran"
+msgstr ""
+"Mengimplementasikan dashboard pelanggan dan sistem integrasi pembayaran"
 
 #: templates/index.html:236
 msgid "Managing full-stack development from frontend to backend deployment"
-msgstr "Mengelola pengembangan full-stack dari frontend hingga deployment backend"
+msgstr ""
+"Mengelola pengembangan full-stack dari frontend hingga deployment backend"
 
 #: templates/index.html:270
 msgid "Built marketplace platform connecting jastip providers with customers"
-msgstr "Membangun platform marketplace yang menghubungkan penyedia jastip dengan pelanggan"
+msgstr ""
+"Membangun platform marketplace yang menghubungkan penyedia jastip dengan "
+"pelanggan"
 
 #: templates/index.html:278
 msgid "Developed provider dashboard with flight details and order management"
-msgstr "Mengembangkan dashboard penyedia dengan detail penerbangan dan manajemen pesanan"
+msgstr ""
+"Mengembangkan dashboard penyedia dengan detail penerbangan dan manajemen "
+"pesanan"
 
 #: templates/index.html:286
 msgid "Implemented search and filtering system for jastip services"
-msgstr "Mengimplementasikan sistem pencarian dan penyaringan untuk layanan jastip"
+msgstr ""
+"Mengimplementasikan sistem pencarian dan penyaringan untuk layanan jastip"
 
 #: templates/index.html:294
 msgid "Created booking workflow and real-time notification system"
@@ -165,8 +459,9 @@ msgid ""
 "admin control. Admin can create, edit, and delete packages directly from "
 "dashboard."
 msgstr ""
-"Platform agen perjalanan dinamis untuk paket Haji, Umrah, dan tur dengan kontrol admin penuh. "
-"Admin dapat membuat, mengedit, dan menghapus paket langsung dari dashboard."
+"Platform agen perjalanan dinamis untuk paket Haji, Umrah, dan tur dengan "
+"kontrol admin penuh. Admin dapat membuat, mengedit, dan menghapus paket "
+"langsung dari dashboard."
 
 #: templates/index.html:426 templates/index.html:500 templates/index.html:574
 msgid "View Case Study"
@@ -178,9 +473,10 @@ msgid ""
 "Date-based baggage search with flight registration and analytics dashboard "
 "for tracking WhatsApp engagement."
 msgstr ""
-"Platform marketplace jastip yang menghubungkan traveler dan pelanggan di Mesir. "
-"Pencarian bagasi berdasarkan tanggal dengan registrasi penerbangan dan dashboard analitik "
-"untuk melacak total klik yang mengarah ke WhatsApp traveler."
+"Platform marketplace jastip yang menghubungkan traveler dan pelanggan di "
+"Mesir. Pencarian bagasi berdasarkan tanggal dengan registrasi penerbangan "
+"dan dashboard analitik untuk melacak total klik yang mengarah ke WhatsApp "
+"traveler."
 
 #: templates/index.html:539
 msgid ""
@@ -188,8 +484,8 @@ msgid ""
 "bot with location-based search and Django Admin dashboard with Leaflet map "
 "integration."
 msgstr ""
-"Sistem peringatan blacklist otomatis untuk mahasiswa Indonesia di Mesir. "
-"Bot Telegram dengan pencarian berbasis lokasi dan dashboard Django Admin dengan "
+"Sistem peringatan blacklist otomatis untuk mahasiswa Indonesia di Mesir. Bot "
+"Telegram dengan pencarian berbasis lokasi dan dashboard Django Admin dengan "
 "integrasi peta Leaflet."
 
 #: templates/index.html:594
@@ -201,16 +497,18 @@ msgid ""
 "Specialized in building automation solutions for Telegram and WhatsApp that "
 "help businesses streamline operations and improve customer engagement."
 msgstr ""
-"Berspesialisasi dalam membangun solusi otomasi untuk Telegram dan WhatsApp yang "
-"membantu bisnis menyederhanakan operasi dan meningkatkan keterlibatan pelanggan."
+"Berspesialisasi dalam membangun solusi otomasi untuk Telegram dan WhatsApp "
+"yang membantu bisnis menyederhanakan operasi dan meningkatkan keterlibatan "
+"pelanggan."
 
 #: templates/index.html:622
 msgid ""
 "Reusable framework for rapid Telegram bot development with built-in user "
 "management, payment processing, and webhook integration."
 msgstr ""
-"Framework yang dapat digunakan kembali untuk pengembangan bot Telegram cepat dengan "
-"manajemen pengguna bawaan, pemrosesan pembayaran, dan integrasi webhook."
+"Framework yang dapat digunakan kembali untuk pengembangan bot Telegram cepat "
+"dengan manajemen pengguna bawaan, pemrosesan pembayaran, dan integrasi "
+"webhook."
 
 #: templates/index.html:658
 msgid ""
@@ -227,7 +525,6 @@ msgid ""
 msgstr ""
 "Sistem terpadu untuk mengelola kampanye di Website, Telegram, dan WhatsApp "
 "dengan pesan siaran dan pelacakan analitik."
-
 
 #: templates/index.html:713
 msgid "Let's Work Together"
