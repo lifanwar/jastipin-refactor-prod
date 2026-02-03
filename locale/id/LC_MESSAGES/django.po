@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-03 12:22+0200\n"
+"POT-Creation-Date: 2026-02-03 12:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,7 @@ msgstr ""
 "Indonesia di Mesir"
 
 #: apps/showcase/templates/showcase/dkkm.html:70
+#: apps/showcase/templates/showcase/saudahtravel.html:65
 #, fuzzy
 #| msgid "View Case Study"
 msgid "Read Case Study"
@@ -34,6 +35,7 @@ msgstr "Baca Studi Kasus"
 
 #: apps/showcase/templates/showcase/dkkm.html:76
 #: apps/showcase/templates/showcase/dkkm.html:712
+#: apps/showcase/templates/showcase/saudahtravel.html:686
 #, fuzzy
 #| msgid "Get in touch"
 msgid "Get in Touch"
@@ -46,6 +48,7 @@ msgid "Project Info"
 msgstr "Info Proyek"
 
 #: apps/showcase/templates/showcase/dkkm.html:171
+#: apps/showcase/templates/showcase/saudahtravel.html:157
 msgid "Overview"
 msgstr "Gambaran Umum"
 
@@ -88,6 +91,7 @@ msgstr ""
 "berbasis lokasi dengan pengelolaan terpusat."
 
 #: apps/showcase/templates/showcase/dkkm.html:200
+#: apps/showcase/templates/showcase/saudahtravel.html:185
 msgid "The Challenge"
 msgstr "Tantangan"
 
@@ -121,6 +125,7 @@ msgstr ""
 "mahasiswa."
 
 #: apps/showcase/templates/showcase/dkkm.html:245
+#: apps/showcase/templates/showcase/saudahtravel.html:230
 msgid "The Solution"
 msgstr "Solusi"
 
@@ -211,6 +216,7 @@ msgid "Batch Updates"
 msgstr "Pembaruan Massal"
 
 #: apps/showcase/templates/showcase/dkkm.html:372
+#: apps/showcase/templates/showcase/saudahtravel.html:353
 msgid "Key Features"
 msgstr "Fitur Utama"
 
@@ -305,18 +311,273 @@ msgid "Audit log for changes"
 msgstr "Log audit untuk setiap perubahan"
 
 #: apps/showcase/templates/showcase/dkkm.html:702
+#: apps/showcase/templates/showcase/saudahtravel.html:669
 msgid "Interested in working together?"
 msgstr "Tertarik untuk bekerja sama?"
 
 #: apps/showcase/templates/showcase/dkkm.html:705
+#: apps/showcase/templates/showcase/saudahtravel.html:672
 msgid "Let's keep in touch and discuss your next project"
 msgstr "Mari tetap terhubung dan membahas proyek berikutnya"
 
 #: apps/showcase/templates/showcase/dkkm.html:718
+#: apps/showcase/templates/showcase/saudahtravel.html:692
 #, fuzzy
 #| msgid "Projects"
 msgid "More Projects"
 msgstr "Proyek Lainnya"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:29
+#, fuzzy
+#| msgid ""
+#| "Developing comprehensive travel agency platform for Hajj, Umrah, and tour "
+#| "packages"
+msgid "Dynamic Travel Agency Platform for Hajj, Umrah & Tour Packages"
+msgstr ""
+"Mengembangkan platform agen perjalanan komprehensif untuk paket Haji, Umrah, "
+"dan tur"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:59
+#: apps/showcase/templates/showcase/saudahtravel.html:680
+msgid "Visit Live Site"
+msgstr "Kunjungi Situs Langsung"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:161
+msgid ""
+"Saudah Travel is a comprehensive web platform designed for a travel agency "
+"specializing in Islamic pilgrimage services (Hajj and Umrah) as well as "
+"general tour packages. The platform provides a dynamic content management "
+"system that empowers the admin team to manage travel packages efficiently."
+msgstr ""
+"Saudah Travel adalah platform web komprehensif yang dirancang untuk agen "
+"perjalanan dengan spesialisasi layanan ibadah (Haji dan Umrah) serta "
+"paket wisata umum. Platform ini menyediakan sistem manajemen konten dinamis "
+"yang memberdayakan tim admin untuk mengelola paket perjalanan secara efisien."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:165
+msgid ""
+"Built with modern web technologies, the platform features a fully responsive "
+"design and an intuitive admin dashboard. Administrators can create, edit, "
+"and delete travel packages in real-time without requiring technical "
+"expertise, making content management seamless and efficient."
+msgstr ""
+"Dibangun dengan teknologi web modern, platform ini menampilkan desain yang "
+"sepenuhnya responsif dan dasbor admin yang intuitif. Administrator dapat "
+"membuat, menyunting, dan menghapus paket perjalanan secara waktu nyata "
+"tanpa memerlukan keahlian teknis, sehingga pengelolaan konten menjadi "
+"mulus dan efisien."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:172
+msgid ""
+"\"The goal was to create a platform that is both powerful for admins and "
+"intuitive for customers browsing travel packages.\""
+msgstr ""
+"\"Tujuannya adalah menciptakan platform yang andal bagi admin sekaligus "
+"intuitif bagi pelanggan yang menelusuri paket perjalanan.\""
+
+#: apps/showcase/templates/showcase/saudahtravel.html:199
+#, fuzzy
+#| msgid "Data Consistency"
+msgid "Static Content"
+msgstr "Konten Statis"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:202
+msgid ""
+"Previous website required developer intervention for every content update, "
+"causing delays and increasing maintenance costs."
+msgstr ""
+"Situs web sebelumnya memerlukan intervensi pengembang untuk setiap pembaruan "
+"konten, yang menyebabkan penundaan dan peningkatan biaya pemeliharaan."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:216
+#, fuzzy
+#| msgid "Auto Updates"
+msgid "Slow Updates"
+msgstr "Pembaruan Lambat"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:219
+msgid ""
+"Travel packages needed frequent price and availability updates, but the "
+"manual process was time-consuming and error-prone."
+msgstr ""
+"Paket perjalanan memerlukan pembaruan harga dan ketersediaan yang sering, "
+"namun proses manual sangat memakan waktu dan rentan terhadap kesalahan."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:244
+msgid "Dynamic CMS"
+msgstr "CMS Dinamis"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:247
+msgid ""
+"Built a comprehensive admin dashboard where non-technical staff can manage "
+"all travel packages, including creating, editing, deleting, and publishing "
+"content instantly."
+msgstr ""
+"Membangun dasbor admin yang komprehensif di mana staf non-teknis dapat "
+"mengelola seluruh paket perjalanan, termasuk membuat, menyunting, menghapus, "
+"dan menerbitkan konten secara instan."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:272
+msgid "Mobile-First Design"
+msgstr "Desain Mobile-First"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:275
+msgid ""
+"Implemented fully responsive design using Tailwind CSS, ensuring perfect "
+"user experience across all devices from mobile phones to desktop screens."
+msgstr ""
+"Menerapkan desain yang sepenuhnya responsif menggunakan Tailwind CSS, guna "
+"memastikan pengalaman pengguna yang sempurna di semua perangkat, mulai dari "
+"ponsel hingga layar desktop."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:279
+msgid "Responsive Grid"
+msgstr "Grid Responsif"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:282
+msgid "Touch Optimized"
+msgstr "Dioptimalkan untuk Sentuhan"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:285
+msgid "Fast Loading"
+msgstr "Pemuatan Cepat"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:300
+msgid "Interactive UI"
+msgstr "Antarmuka Pengguna (UI) Interaktif"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:303
+msgid ""
+"Enhanced user experience with smooth animations and interactive components "
+"using Alpine.js, making the browsing experience more engaging without heavy "
+"JavaScript frameworks."
+msgstr ""
+"Meningkatkan pengalaman pengguna dengan animasi halus dan komponen interaktif "
+"menggunakan Alpine.js, menjadikan pengalaman penelusuran lebih menarik tanpa "
+"kerangka kerja JavaScript yang berat."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:307
+msgid "Smooth Transitions"
+msgstr "Transisi Halus"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:310
+msgid "Dropdown Menus"
+msgstr "Menu Dropdown"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:313
+msgid "Modal Windows"
+msgstr "Jendela Modal"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:331
+msgid ""
+"Designed clean, professional interface that builds trust with potential "
+"customers while maintaining easy navigation and clear call-to-actions."
+msgstr ""
+"Merancang antarmuka yang bersih dan profesional untuk membangun kepercayaan "
+"dengan calon pelanggan, sembari mempertahankan navigasi yang mudah dan "
+"ajakan bertindak (CTA) yang jelas."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:335
+msgid "Clean Layout"
+msgstr "Tata Letak Bersih"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:338
+msgid "Clear CTAs"
+msgstr "CTA yang Jelas"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:341
+msgid "Trust Signals"
+msgstr "Sinyal Kepercayaan"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:367
+#, fuzzy
+#| msgid "Real-Time Data Management"
+msgid "Package Management"
+msgstr "Manajemen Paket"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:372
+msgid ""
+"Comprehensive CRUD operations for travel packages with rich text editing, "
+"image galleries, pricing tiers, and availability tracking."
+msgstr ""
+"Operasi CRUD komprehensif untuk paket perjalanan dengan penyuntingan teks "
+"kaya fitur, galeri gambar, tingkatan harga, dan pelacakan ketersediaan."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:380
+msgid "Create unlimited package variations"
+msgstr "Membuat variasi paket tanpa batas"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:388
+msgid "Upload multiple images per package"
+msgstr "Mengunggah banyak gambar per paket"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:395
+msgid "Set different pricing options"
+msgstr "Menetapkan opsi harga yang berbeda"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:401
+#, fuzzy
+#| msgid "Manage blacklist status"
+msgid "Manage availability and dates"
+msgstr "Mengelola ketersediaan dan tanggal"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:445
+msgid "User-Friendly Interface"
+msgstr "Antarmuka Ramah Pengguna"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:450
+msgid ""
+"Intuitive navigation and clean design help customers easily find and compare "
+"travel packages, with clear pricing and booking information."
+msgstr ""
+"Navigasi yang intuitif dan desain yang bersih membantu pelanggan menemukan "
+"serta membandingkan paket perjalanan dengan mudah, disertai informasi harga "
+"dan pemesanan yang jelas."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:457
+msgid "Category filtering system"
+msgstr "Sistem penyaringan kategori"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:463
+msgid "Search functionality"
+msgstr "Fungsionalitas pencarian"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:469
+msgid "Package comparison feature"
+msgstr "Fitur perbandingan paket"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:476
+msgid "WhatsApp integration for inquiries"
+msgstr "Integrasi WhatsApp untuk pertanyaan"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:493
+msgid "Performance Optimized"
+msgstr "Kinerja Dioptimalkan"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:498
+msgid ""
+"Built with performance in mind, ensuring fast page loads even with rich "
+"media content and multiple package listings."
+msgstr ""
+"Dibangun dengan memprioritaskan kinerja, memastikan pemuatan halaman yang "
+"cepat bahkan dengan konten media yang kaya dan daftar paket yang banyak."
+
+#: apps/showcase/templates/showcase/saudahtravel.html:505
+msgid "Optimized image loading"
+msgstr "Pemuatan gambar yang dioptimalkan"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:511
+msgid "Efficient database queries"
+msgstr "Kueri basis data yang efisien"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:517
+msgid "Cached static assets"
+msgstr "Aset statis yang di-cache"
+
+#: apps/showcase/templates/showcase/saudahtravel.html:523
+msgid "Lazy loading implementation"
+msgstr "Penerapan lazy loading"
+
 
 #: config/settings/base.py:71
 msgid "English"
