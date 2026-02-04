@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load tailwind_tags %}
+{% tailwind_css %}
 {% load i18n %}
 {% block title %}Mualiful Anwar | Full Stack Web Developer{% endblock %}
 
@@ -25,35 +27,35 @@
             </p>
             <div class="flex flex-wrap gap-2 mb-8">
               <span
-                class="inline-block bg-black bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
+                class="inline-block bg-black text-white bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
                 >Python</span
               >
               <span
-                class="inline-block bg-black bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
+                class="inline-block bg-black text-white bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
                 >JavaScript</span
               >
               <span
-                class="inline-block bg-black bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
+                class="inline-block bg-black text-white bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
                 >Django</span
               >
               <span
-                class="inline-block bg-black bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
+                class="inline-block bg-black text-white bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
                 >Tailwind CSS</span
               >
               <span
-                class="inline-block bg-black bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
+                class="inline-block bg-black text-white bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
                 >Alpine.js</span
               >
               <span
-                class="inline-block bg-black bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
+                class="inline-block bg-black text-white bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
                 >PostgreSQL</span
               >
               <span
-                class="inline-block bg-black bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
+                class="inline-block bg-black text-white bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
                 >Redis</span
               >
               <span
-                class="inline-block bg-black bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
+                class="inline-block bg-black text-white bg-opacity-5 px-3 py-1 rounded-full text-sm font-medium"
                 >Docker</span
               >
             </div>
@@ -385,9 +387,19 @@
               </div>
               <a
                 href="{% url "showcase:saudah-travel" %}"
-                class="text-3xl font-black hover:text-blue-600 transition-colors transform hover:scale-110"
-                >↗</a
+                class="hover:text-blue-600 transition-colors transform hover:scale-110 inline-block"
               >
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 16 16" 
+                  fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" stroke="currentColor" stroke-width="1"/>
+                </svg>
+              </a>
+
             </div>
 
             <!-- Description -->
@@ -455,9 +467,19 @@
               </div>
               <a
                 href="{% url "showcase:jastipin" %}"
-                class="text-3xl font-black hover:text-green-600 transition-colors transform hover:scale-110"
-                >↗</a
+                class="hover:text-green-600 transition-colors transform hover:scale-110 inline-block"
               >
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 16 16" 
+                  fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" stroke="currentColor" stroke-width="1"/>
+                </svg>
+              </a>
+
             </div>
 
             <!-- Description -->
@@ -529,9 +551,19 @@
               </div>
               <a
                 href="{% url "showcase:dkkm" %}"
-                class="text-3xl font-black hover:text-cyan-600 transition-colors transform hover:scale-110"
-                >↗</a
+                class="hover:text-cyan-600 transition-colors transform hover:scale-110 inline-block"
               >
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 16 16" 
+                  fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" stroke="currentColor" stroke-width="1"/>
+                </svg>
+              </a>
+              
             </div>
 
             <!-- Description -->
@@ -600,7 +632,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Automation Card 1 -->
           <article
-            class="border-2 border-gray-900 p-6 bg-cream shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all"
+            class="border-2 border-gray-900 p-6 bg-[#f5f1ed] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all"
           >
             <div class="flex items-center gap-3 mb-4">
               <div
@@ -636,7 +668,7 @@
 
           <!-- Automation Card 2 -->
           <article
-            class="border-2 border-gray-900 p-6 bg-lightgreen shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all"
+            class="border-2 border-gray-900 p-6 bg-[#c8f5c4] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all"
           >
             <div class="flex items-center gap-3 mb-4">
               <div
@@ -707,7 +739,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-cream py-16 md:py-20">
+    <section id="contact" class="bg-white py-16 md:py-20">
       <div class="max-w-7xl mx-auto px-6">
         <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
           {% trans "Let's Work Together" %}
