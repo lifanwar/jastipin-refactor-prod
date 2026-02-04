@@ -15,27 +15,6 @@
 
     <script defer src="{% static 'js/alpine.min.js' %}"></script>
 
-    <!-- Tailwind Config -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#D0F75B",
-              cream: "#f5f1ed",
-              creamautumn: "#fefce8",
-              lightgreen: "#c8f5c4",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-
-    <!-- Extra CSS Block -->
-    {% block extra_css %}{% endblock %}
   </head>
 
   <body class="bg-[#fefce8] text-gray-900 antialiased font-sans">
@@ -52,7 +31,5 @@
     <!-- Footer -->
     {% include 'snippets/footer.html' %}
 
-    <!-- Extra JS Block -->
-    {% block extra_js %}{% endblock %}
   </body>
 </html>
