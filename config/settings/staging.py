@@ -20,7 +20,9 @@ DATABASES = {
     }
 }
 
-# CSRF_TRUSTED_ORIGINS = [
-#     f'https://{DOMAIN}',
-#     f'http://{DOMAIN}',
-# ]
+# CSRF Trusted Origins
+CSRF_TRUSTED_ORIGINS = [
+    f'{protocol}://{domain}'
+    for domain in ALLOWED_HOSTS
+    for protocol in ['https', 'http']
+]
