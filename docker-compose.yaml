@@ -3,9 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: django_my_porto_web_dev
-    ports:
-      - "31628:8000"
     env_file:
       - .env
     restart: unless-stopped
@@ -17,4 +14,4 @@ services:
     command: >
       sh -c "python manage.py collectstatic --noinput &&
              python manage.py migrate &&
-             gunicorn config.wsgi:application --bind 0.0.0.0:$$PORT --workers 3 --timeout 60"
+             gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 60"
