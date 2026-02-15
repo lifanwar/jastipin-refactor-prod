@@ -41,15 +41,6 @@ COPY . .
 # Copy compiled Tailwind CSS dari stage 1
 COPY --from=node-builder /app/theme/static/css/dist /app/theme/static/css/dist
 
-# Collect static files
-RUN python manage.py collectstatic --noinput
-
-# Create non-root user
-RUN useradd -m -u 1000 django && \
-    chown -R django:django /app
-
-USER django
-
 # Expose port
 EXPOSE 8000
 
