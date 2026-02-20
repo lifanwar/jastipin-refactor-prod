@@ -1,0 +1,104 @@
+<section>
+    <div class="mt-6 px-4 sm:ml-10 sm:mr-10">
+  <div class="bg-white p-4 rounded-lg mb-4">
+    <div class="max-w-4xl mx-auto" x-data="{ openIndex: null }">
+      <!-- FAQ 1 -->
+      <div class="border-b border-gray-200">
+        <h2 class="text-xl font-semibold text-gray-800 py-4">
+          <button
+            class="w-full text-left flex items-center justify-between focus:outline-none"
+            @click="openIndex === 1 ? openIndex = null : openIndex = 1"
+          >
+            <span>Apa itu Jastipin?</span>
+            <svg
+              :class="openIndex === 1 ? 'rotate-180' : 'rotate-0'"
+              class="w-6 h-6 transition-transform transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          x-show="openIndex === 1"
+          x-transition
+          class="text-gray-600 pl-4 pb-4"
+        >
+          Jastipin adalah platform yang memungkinkan Anda untuk menggunakan jasa titip barang dari luar negeri atau Indonesia. Kami membantu menghubungkan penyedia jasa dengan pembeli untuk membantu mengirimkan barang.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="border-b border-gray-200">
+        <h2 class="text-xl font-semibold text-gray-800 py-4">
+          <button
+            class="w-full text-left flex items-center justify-between focus:outline-none"
+            @click="openIndex === 2 ? openIndex = null : openIndex = 2"
+          >
+            <span>Bagaimana cara menjadi seorang "Jasa Titip" di Jastipin?</span>
+            <svg
+              :class="openIndex === 2 ? 'rotate-180' : 'rotate-0'"
+              class="w-6 h-6 transition-transform transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          x-show="openIndex === 2"
+          x-transition
+          class="text-gray-600 pl-4 pb-4"
+        >
+          Jika ingin menjadi penyedia jasa titip, cukup daftar di platform kami. Setelah verifikasi Email, Anda dapat mulai menawarkan tanggal penerbangan Anda.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="border-b border-gray-200">
+        <h2 class="text-xl font-semibold text-gray-800 py-4">
+          <button
+            class="w-full text-left flex items-center justify-between focus:outline-none"
+            @click="openIndex === 3 ? openIndex = null : openIndex = 3"
+          >
+            <span>Bagaimana cara memesan di Jastipin?</span>
+            <svg
+              :class="openIndex === 3 ? 'rotate-180' : 'rotate-0'"
+              class="w-6 h-6 transition-transform transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          x-show="openIndex === 3"
+          x-transition
+          class="text-gray-600 pl-4 pb-4"
+        >
+          Cari sesuai negara yang dituju beserta tanggal yang di inginkan. Lalu, kontak jasa yang tersedia. (<a href="#" class="text-blue-500 hover:underline">Ketentuan Berlaku</a>)
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
