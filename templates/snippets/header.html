@@ -1,35 +1,19 @@
 {% load tailwind_tags %}
-{% tailwind_css %}
-{% load static %}
+{% tailwind_css %}{% load static %}
 
-<header
-  class="sticky top-0 inset-x-0 z-50 bg-white shadow-md"
-  x-data="{ open: false }"
-  @click.away="open = false"
->
+<header class="sticky top-0 inset-x-0 z-50 bg-white shadow-md" x-data="{ open: false }">
   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-
     <!-- Logo -->
     <a href="#" class="flex items-center text-xl font-bold text-gray-800">
-      <img 
-        src="{% static 'images/logoblue.png' %}" 
-        alt="Jastipin Logo"
-        class="w-6 h-auto mr-2"
-      >
+      <img src="{% static 'images/logoblue.png' %}" alt="Jastipin Logo" class="w-6 h-auto mr-2">
       <span>jastipin</span>
     </a>
 
-    <!-- Desktop Navigation -->
+    <!-- Desktop -->
     <div class="hidden md:flex items-center space-x-6">
-      <a href="#" class="text-gray-700 hover:text-blue-600 transition">
-        Contact Sales
-      </a>
-      <a href="#" class="text-gray-700 hover:text-blue-600 transition">
-        Log In
-      </a>
-      <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-        Daftar Bagasi
-      </a>
+      <a href="#" class="text-gray-700 hover:text-blue-600 transition">Contact Sales</a>
+      <a href="#" class="text-gray-700 hover:text-blue-600 transition">Log In</a>
+      <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Daftar Bagasi</a>
     </div>
 
     <!-- Mobile Button -->
@@ -42,73 +26,38 @@
         Daftar Bagasi
       </a>
 
-      <button 
-        @click="open = !open"
-        class="text-gray-700"
-        aria-label="Toggle Menu"
-      >
-        <svg
-          x-show="!open"
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          />
+      <button @click="open = !open" class="text-gray-700" aria-label="Toggle Menu">
+        <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
-
-        <svg
-          x-show="open"
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M6 18L18 6M6 6l12 12"
-          />
+        <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
-
   </div>
 
-  <!-- Mobile Menu -->
-  <nav
+  <!-- Mobile Overlay (Backdrop + Panel) -->
+  <div
     x-show="open"
     x-cloak
-    x-transition
-    class="fixed inset-0 bg-white/95 z-40 p-6 overflow-y-auto md:hidden"
+    x-transition.opacity
+    class="fixed inset-0 z-40 md:hidden"
+    @keydown.escape.window="open = false"
   >
-    <div class="mt-24 space-y-4">
-      <a 
-        href="#"
-        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-        @click="open=false"
-      >
-        Contact Sales
-      </a>
+    <!-- Backdrop: klik di luar panel akan close -->
+    <div class="absolute inset-0 bg-white/95" @click="open = false"></div>
 
-      <a 
-        href="#"
-        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-        @click="open=false"
-      >
-        Log In
-      </a>
-
-      <a 
-        href="#"
-        class="block px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-lg"
-        @click="open=false"
-      >
-        Daftar Bagasi
-      </a>
-    </div>
-  </nav>
-
+    <!-- Panel: klik di dalam tidak close -->
+    <nav
+      class="relative z-50 p-6 overflow-y-auto"
+      @click.stop
+    >
+      <div class="mt-24 space-y-4">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded" @click="open=false">Contact Sales</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded" @click="open=false">Log In</a>
+        <a href="#" class="block px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-lg" @click="open=false">Daftar Bagasi</a>
+      </div>
+    </nav>
+  </div>
 </header>
