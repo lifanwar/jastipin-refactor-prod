@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Search Result{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="flex flex-col justify-center items-center">
+      <div
+        class="md:hidden detail w-full md:h-[100px] bg-white justify-center items-center"
+      >
+        <!-- mobile -->
+        <div class="h-[100px] md:hidden flex items-center justify-between">
+          <div class="flex-col pl-8">
+            <div class="flex">
+              <h4>keberangkatan_code</h4>
+              <i class="ri-arrow-right-line"></i>
+              <h4>kedatangan_code</h4>
+            </div>
+            <div id='hasil-takeoff'>
+              <h4>format_takeoff_indonesia</h4>
+            </div>
+          </div>
+          <div class="pr-8 cursor-pointer hover:text-[#4855DC]" x-data="{ open: false }" >
+            <div 
+              class="search bg-black rounded-full text-white px-3 py-1 hover:text-black hover:bg-white hover:border hover:border-current" 
+              @click="open = true">
+              <i class="ri-search-line"></i>
+              <a href="#">Search</a>
+            </div>
+            {% comment %} {% include "snippets/popup_search.html" %} {% endcomment %}
+          </div>
+
+          </div>
+        </div>
+        <!-- desktop -->
+
+        <div
+          class="md:flex items-center hidden justify-around md:w-[700px] md:h-[60px] border-2 border-black rounded-full mb-4 mt-6"
+        >
+          <div class="flex w-[180px] justify-evenly border-e px-3 py-1">
+            <h4>keberangkatan_code</h4>
+            <i class="ri-arrow-right-line  text-xl"></i>
+            <h4>kedatangan_code</h4>
+          </div>
+          <div class="flex w-[180px] justify-evenly" id="hasil-takeoff">
+            <i class="ri-calendar-line"></i>
+            <h4>Test</h4>
+          </div>
+
+          <div class="flex w-[180px] justify-center border-s" x-data="{ open: false }">
+            <div
+              class="search bg-black rounded-full text-white px-3 py-1 hover:text-black hover:bg-white hover:border hover:border-current cursor-pointer"
+              @click="open = true">
+              <i class="ri-search-line"></i>
+              <a href="#">Search</a>
+            </div>
+            {% comment %} {% include "snippets/popup_search.html" %} {% endcomment %}
+          </div>
+
+        </div>
+      </div>
+
+      <!-- end detail tanggal -->
+
+      <!-- weekly start -->
+
+      <div
+        x-data="{ 
+    scrollToCenter() {
+      this.$nextTick(() => {
+        const container = this.$refs.dateContainer;
+        // Pastikan ada cukup elemen dalam container
+        if (container && container.children.length > 0) {
+          const target = container.children[Math.floor(container.children.length / 2)];
+          target.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+        }
+      });
+    }
+  }"
+        x-init="scrollToCenter"
+        class="weekly cursor-pointer w-full h-[100px] bg-[#4855DC] flex justify-center items-center gap-5 text-xl text-slate-300"
+      >
+        <div class="sm:flex sm:items-center sm:justify-around w-full">
+          
+          <!-- Date Section -->
+          <div
+          x-ref="dateContainer"
+          class="tanggal-weekly flex items-center justify-between w-full h-[100px] overflow-x-auto sm:overflow-visible whitespace-nowrap snap-x snap-mandatory"
+          >
+          <!-- Left Arrow -->
+          <div
+          class="pl-8 left-icon text-3xl hover:text-white sm:inline snap-start hidden"
+          >
+            <i class="ri-arrow-left-wide-line hidden"></i>
+          </div>
+          {% comment %} {% include "snippets/list-weekly.html" %} {% endcomment %}
+            <!-- Right Arrow-->
+            <div
+            class="pr-8 right-icon text-3xl hover:text-white sm:inline snap-start hidden"
+          >
+            <i class="ri-arrow-right-wide-line hidden"></i>
+          </div>
+          </div>
+
+       
+        </div>
+      </div>
+
+      <!-- weekly end -->
+      <div
+        class="filter font-semibold w-full py-3 flex items-center justify-between"
+      >
+        <div class="flex ml-10 cursor-pointer">
+          <h4>Result :</h4>
+          <h4>jumlah_penerbangans</h4>
+        </div>
+       
+      </div>
+
+      <!-- start list -->
+      
+     
+      <!-- start Header start -->
+      <div class="shadow-md rounded-xl md:w-[70%] w-[90%] h-auto flex flex-col">
+        <div
+          class="head bg-[#FCFBFB] flex items-center justify-between w-full h-[5.3rem] rounded-t-lg"
+        >
+          <div class="ml-4 sm:ml-11 w-[150px] h-full flex items-center">
+            <h4>Company</h4>
+          </div>
+          <div class="w-[150px] h-full flex justify-center items-center">
+            <h4>Bagasi</h4>
+          </div>
+          <div class="w-[150px] h-full flex justify-center items-center">
+            <h4>Maskapai</h4>
+          </div>
+          <div
+          class="w-[150px] h-full flex justify-center items-center ml-4 sm:mr-11"
+          ></div>
+        </div>
+        <!-- start Header End -->
+
+      {% comment %} <div id="penerbangan-list">
+          {% for penerbangan in penerbangans %}
+          {% include "snippets/data_search.html" %}
+          {% endfor %} {% endcomment %}
+
+        {% comment %} {% else %}
+        <div class="flex items-center">
+          <p class="text-gray-500 text-center">
+            Tidak ada penerbangan yang ditemukan dengan kriteria tersebut.
+          </p>
+        </div>
+        
+        {% endif %} {% endcomment %}
+      
+
+      <!-- akhir list -->
+
+      <div class="py-8 flex justify-evenly w-full">
+        <a
+          class="align py-1 px-3 items-center text-center border border-violet-600 rounded-full active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring cursor-pointer"
+          x-data
+          @click="if (window.history.length > 1) { window.history.back() } else { window.location.href = '/' }"
+        >
+          Back
+        </a>
+
+
+    </div>
+
+</div>
+	
+
+    {% endblock %}
+
