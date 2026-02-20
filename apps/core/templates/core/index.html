@@ -34,7 +34,7 @@
 </div>
 
 <!-- Main Content -->
-<div class="flex flex-col lg:flex-row mx-4 mt-4">
+<Section class="flex flex-col lg:flex-row mx-4 mt-4">
   <!-- Left Section (Text) -->
   <div class="lg:w-1/2 px-4 mb-6 lg:mb-0 flex items-center justify-center">
     <div class="sm:text-balance flex flex-col sm:item-center sm:align-middle justify-center sm:h-80 sm:w-[550px]">
@@ -52,93 +52,118 @@
   </div>
 
   <!-- Right Section (Form) -->
-  <div class="lg:w-1/2 sm:flex sm:justify-center">
-    <div class="bg-white shadow-md rounded-lg p-6 sm:h-full sm:w-[430px]">
+  <div 
+  class="lg:w-1/2 sm:flex sm:justify-center"
+  x-data="{
+    showFrom: false,
+    showTo: false,
+    fromValue: 'Soekarno-Hatta International (CGK)',
+    toValue: 'Cairo International (CAI)'
+  }"
+>
+  <div class="bg-white shadow-md rounded-lg p-6 sm:h-full sm:w-[430px]">
 
-      <form>
-        <!-- From Location (Dummy) -->
-        <div class="mb-4">
-          <label for="keberangkatan" class="block text-gray-700 font-medium mb-2">From</label>
-          <div class="flex justify-center items-end bg-gray-100 p-3 rounded-md relative">
-            <i class="ri-flight-takeoff-line text-gray-500 mr-3 text-xl"></i>
-            <input
-              type="text"
-              id="keberangkatan"
-              name="keberangkatan"
-              placeholder="Jakarta, CGK / Cairo, CAI"
-              class="bg-transparent w-full focus:outline-none text-gray-700"
-              value="Soekarno-Hatta International (CGK)"
-              autocomplete="off"
-            />
-          </div>
+    <form @submit.prevent>
 
-          <!-- Dummy dropdown preview (static, no JS) -->
-          <div class="mt-2 bg-white border border-gray-200 rounded-md">
-            <ul>
-              <li class="px-4 py-2 text-gray-700">
-                <span class="font-bold">Soekarno-Hatta International (CGK)</span>
-                <span> - </span>
-                <span>Tangerang, Indonesia</span>
-              </li>
-              <li class="px-4 py-2 text-gray-700 border-t border-gray-100">
-                <span class="font-bold">Cairo International (CAI)</span>
-                <span> - </span>
-                <span>Cairo, Egypt</span>
-              </li>
-            </ul>
-          </div>
+      <!-- From -->
+      <div class="mb-4 relative" @click.away="showFrom = false">
+        <label class="block text-gray-700 font-medium mb-2">From</label>
+      
+        <div 
+          class="flex items-center bg-gray-100 p-3 rounded-md cursor-pointer"
+          @click="showFrom = !showFrom"
+        >
+          <i class="ri-flight-takeoff-line text-gray-500 mr-3 text-xl"></i>
+          <input 
+            type="text"
+            class="bg-transparent w-full focus:outline-none text-gray-700 cursor-pointer"
+            x-model="fromValue"
+            readonly
+          />
+        </div>
+      
+        <!-- Dropdown -->
+        <div 
+          class="absolute top-full left-0 mt-2 w-full 
+                 bg-white border border-gray-200 rounded-md shadow-lg
+                 z-50"
+          x-show="showFrom"
+          x-transition
+        >
+          <ul>
+            <li 
+              class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              @click="fromValue='Soekarno-Hatta International (CGK)'; showFrom=false"
+            >
+              <strong>Soekarno-Hatta (CGK)</strong> - Tangerang, Indonesia
+            </li>
+            <li 
+              class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              @click="fromValue='Cairo International (CAI)'; showFrom=false"
+            >
+              <strong>Cairo International (CAI)</strong> - Cairo, Egypt
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- To -->
+      <div class="mb-4 relative" @click.away="showTo = false">
+        <label class="block text-gray-700 font-medium mb-2">To</label>
+
+        <div 
+          class="flex items-center bg-gray-100 p-3 rounded-md cursor-pointer"
+          @click="showTo = !showTo"
+        >
+          <i class="ri-flight-land-line text-gray-500 mr-3 text-xl"></i>
+          <input 
+            type="text"
+            class="bg-transparent w-full focus:outline-none text-gray-700 cursor-pointer"
+            x-model="toValue"
+            readonly
+          />
         </div>
 
-        <!-- To Location (Dummy) -->
-        <div class="mb-4">
-          <label for="kedatangan" class="block text-gray-700 font-medium mb-2">To</label>
-          <div class="flex items-center bg-gray-100 p-3 rounded-md relative">
-            <i class="ri-flight-land-line text-gray-500 mr-3 text-xl"></i>
-            <input
-              type="text"
-              id="kedatangan"
-              name="kedatangan"
-              placeholder="Cairo, CAI / Jakarta, CGK"
-              class="bg-transparent w-full focus:outline-none text-gray-700"
-              value="Cairo International (CAI)"
-              autocomplete="off"
-            />
-          </div>
-
-          <!-- Dummy dropdown preview (static, no JS) -->
-          <div class="mt-2 bg-white border border-gray-200 rounded-md">
-            <ul>
-              <li class="px-4 py-2 text-gray-700">
-                <span class="font-bold">Cairo International (CAI)</span>
-                <span> - </span>
-                <span>Cairo, Egypt</span>
-              </li>
-              <li class="px-4 py-2 text-gray-700 border-t border-gray-100">
-                <span class="font-bold">Soekarno-Hatta International (CGK)</span>
-                <span> - </span>
-                <span>Tangerang, Indonesia</span>
-              </li>
-            </ul>
-          </div>
+        <div 
+          class="absolute mt-2 w-full bg-white border border-gray-200 rounded-md shadow-md"
+          x-show="showTo"
+          x-transition
+        >
+          <ul>
+            <li 
+              class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              @click="toValue='Cairo International (CAI)'; showTo=false"
+            >
+              <strong>Cairo International (CAI)</strong> - Cairo, Egypt
+            </li>
+            <li 
+              class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              @click="toValue='Soekarno-Hatta (CGK)'; showTo=false"
+            >
+              <strong>Soekarno-Hatta (CGK)</strong> - Tangerang, Indonesia
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <!-- Date -->
-        {% comment %} {% include "snippets/pilihtanggal.html" %} {% endcomment %}
+      <!-- Date -->
+      {% comment %} {% include "snippets/pilihtanggal.html" %} {% endcomment %}
 
-        <!-- Search Button -->
-        <div class="mt-4">
-          <button
-            type="submit"
-            class="w-full bg-blue-600 text-white py-3 rounded-md font-medium text-lg hover:bg-blue-700"
-          >
-            Let's Search
-          </button>
-        </div>
-      </form>
+      <!-- Search Button -->
+      <div class="mt-4">
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-3 rounded-md font-medium text-lg hover:bg-blue-700"
+        >
+          Let's Search
+        </button>
+      </div>
 
-    </div>
+    </form>
   </div>
 </div>
+
+</section>
 
 {% comment %} <!-- Info Section start -->
 {% include "snippets/iklan.html" %}
