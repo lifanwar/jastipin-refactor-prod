@@ -1,0 +1,162 @@
+<section>
+<div class="mt-6 px-4 sm:ml-10 sm:mr-10">
+  <h1 class="text-gray-800 font-bold text-lg mb-4">
+    Tingkatkan jangkauan bisnis Anda dengan iklan di platform kami
+  </h1>
+
+  <div class="bg-gray-100 p-4 rounded-lg">
+    <!-- Alpine carousel (no Swiper, no loop construct) -->
+    <div
+      x-data="{
+        index: 0,
+        slidesCount: 4,            /* update if you add/remove slides manually */
+        maxWidth: window.innerWidth - 48,
+        maxHeight: 253,
+        updateDimensions() {
+          this.maxWidth = Math.max(320, window.innerWidth - 48);
+        },
+        next() {
+          this.index = (this.index + 1) % this.slidesCount;
+        },
+        prev() {
+          this.index = (this.index - 1 + this.slidesCount) % this.slidesCount;
+        },
+        go(i) {
+          if (i >= 0 && i < this.slidesCount) this.index = i;
+        }
+      }"
+      x-init="updateDimensions(); window.addEventListener('resize', updateDimensions)"
+      class="relative overflow-hidden"
+      aria-label="Galeri gambar iklan"
+    >
+
+      <!-- Slides (hardcoded demo images; links are '#') -->
+      <div class="w-full h-64 flex items-center justify-center">
+        <!-- Slide 1 -->
+        <div
+          x-show="index === 0"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 transform translate-x-4"
+          x-transition:enter-end="opacity-100 transform translate-x-0"
+          x-transition:leave="transition ease-in duration-250"
+          x-transition:leave-start="opacity-100 transform translate-x-0"
+          x-transition:leave-end="opacity-0 transform -translate-x-4"
+          class="absolute inset-0 flex items-center justify-center"
+          aria-roledescription="slide"
+          aria-label="1 dari 4"
+        >
+          <a href="#" class="w-full h-full flex items-center justify-center" aria-label="Iklan 1 - buka tautan">
+            <img
+              :style="'max-width: ' + maxWidth + 'px; max-height: ' + maxHeight + 'px;'"
+              class="rounded-lg object-contain shadow-sm"
+              src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?w=1200&q=60&auto=format&fit=crop"
+              alt="Iklan demo produk 1"
+            />
+          </a>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          x-show="index === 1"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 transform translate-x-4"
+          x-transition:enter-end="opacity-100 transform translate-x-0"
+          x-transition:leave="transition ease-in duration-250"
+          x-transition:leave-start="opacity-100 transform translate-x-0"
+          x-transition:leave-end="opacity-0 transform -translate-x-4"
+          class="absolute inset-0 flex items-center justify-center"
+          aria-roledescription="slide"
+          aria-label="2 dari 4"
+        >
+          <a href="#" class="w-full h-full flex items-center justify-center" aria-label="Iklan 2 - buka tautan">
+            <img
+              :style="'max-width: ' + maxWidth + 'px; max-height: ' + maxHeight + 'px;'"
+              class="rounded-lg object-contain shadow-sm"
+              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=60&auto=format&fit=crop"
+              alt="Iklan demo produk 2"
+            />
+          </a>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          x-show="index === 2"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 transform translate-x-4"
+          x-transition:enter-end="opacity-100 transform translate-x-0"
+          x-transition:leave="transition ease-in duration-250"
+          x-transition:leave-start="opacity-100 transform translate-x-0"
+          x-transition:leave-end="opacity-0 transform -translate-x-4"
+          class="absolute inset-0 flex items-center justify-center"
+          aria-roledescription="slide"
+          aria-label="3 dari 4"
+        >
+          <a href="#" class="w-full h-full flex items-center justify-center" aria-label="Iklan 3 - buka tautan">
+            <img
+              :style="'max-width: ' + maxWidth + 'px; max-height: ' + maxHeight + 'px;'"
+              class="rounded-lg object-contain shadow-sm"
+              src="https://images.unsplash.com/photo-1503602642458-232111445657?w=1200&q=60&auto=format&fit=crop"
+              alt="Iklan demo produk 3"
+            />
+          </a>
+        </div>
+
+        <!-- Slide 4 -->
+        <div
+          x-show="index === 3"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 transform translate-x-4"
+          x-transition:enter-end="opacity-100 transform translate-x-0"
+          x-transition:leave="transition ease-in duration-250"
+          x-transition:leave-start="opacity-100 transform translate-x-0"
+          x-transition:leave-end="opacity-0 transform -translate-x-4"
+          class="absolute inset-0 flex items-center justify-center"
+          aria-roledescription="slide"
+          aria-label="4 dari 4"
+        >
+          <a href="#" class="w-full h-full flex items-center justify-center" aria-label="Iklan 4 - buka tautan">
+            <img
+              :style="'max-width: ' + maxWidth + 'px; max-height: ' + maxHeight + 'px;'"
+              class="rounded-lg object-contain shadow-sm"
+              src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1200&q=60&auto=format&fit=crop"
+              alt="Iklan demo produk 4"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Controls: Prev / Next -->
+      <button
+        @click="prev()"
+        class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-sm focus:outline-none focus:ring"
+        aria-label="Sebelumnya"
+        title="Sebelumnya"
+      >
+        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M12 15L7 10l5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <button
+        @click="next()"
+        class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-sm focus:outline-none focus:ring"
+        aria-label="Berikutnya"
+        title="Berikutnya"
+      >
+        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M8 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <!-- Pagination dots (hardcoded; update count manually if slides change) -->
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2" role="tablist" aria-label="Navigasi slide">
+        <button @click="go(0)" :class="index===0 ? 'w-3 h-3 rounded-full bg-gray-800' : 'w-3 h-3 rounded-full bg-gray-300'" aria-label="Slide 1" role="tab" :aria-selected="index===0"></button>
+        <button @click="go(1)" :class="index===1 ? 'w-3 h-3 rounded-full bg-gray-800' : 'w-3 h-3 rounded-full bg-gray-300'" aria-label="Slide 2" role="tab" :aria-selected="index===1"></button>
+        <button @click="go(2)" :class="index===2 ? 'w-3 h-3 rounded-full bg-gray-800' : 'w-3 h-3 rounded-full bg-gray-300'" aria-label="Slide 3" role="tab" :aria-selected="index===2"></button>
+        <button @click="go(3)" :class="index===3 ? 'w-3 h-3 rounded-full bg-gray-800' : 'w-3 h-3 rounded-full bg-gray-300'" aria-label="Slide 4" role="tab" :aria-selected="index===3"></button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
