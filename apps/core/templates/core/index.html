@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- Header Section -->
+<div class="relative">
+  <img
+    src="{% static 'images/airplane-221526_1280.webp' %}"
+    alt="Flight"
+    class="w-full h-64 object-cover"
+    onerror="this.onerror=null; this.src='https://cdn.pixabay.com/photo/2013/11/30/15/56/airplane-221526_1280.jpg';"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+
+  <div class="absolute bottom-5 left-5 text-white">
+    <h1 class="text-2xl font-bold"></h1>
+  </div>
+</div>
+
+<!-- Info Banner -->
+<div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 flex items-center">
+  <span class="w-8 h-8 rounded-full flex items-center justify-center mr-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  </span>
+  <p class="text-sm font-medium">
+    Dengan Jastipin, kini lebih mudah mencari jasa penerbangan sesuai tanggal yang Anda inginkan.
+  </p>
+</div>
+
+<!-- Main Content -->
+<div class="flex flex-col lg:flex-row mx-4 mt-4">
+  <!-- Left Section (Text) -->
+  <div class="lg:w-1/2 px-4 mb-6 lg:mb-0 flex items-center justify-center">
+    <div class="sm:text-balance flex flex-col sm:item-center sm:align-middle justify-center sm:h-80 sm:w-[550px]">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">
+        Kebutuhan mendadak adalah keinginan unggulan
+      </h2>
+      <p class="text-lg text-gray-600">
+        Pesan bagasi dengan cepat dan mudah, kapan pun Anda membutuhkannya.
+        Tidak perlu khawatir tenggat pengiriman karena kami menyediakan
+        banyak data penerbangan. Harap membaca
+        <a href="#" class="text-blue-500 hover:underline">Ketentuan Layanan</a>
+        sebelum bertransaksi.
+      </p>
+    </div>
+  </div>
+
+  <!-- Right Section (Form) -->
+  <div class="lg:w-1/2 sm:flex sm:justify-center">
+    <div class="bg-white shadow-md rounded-lg p-6 sm:h-full sm:w-[430px]">
+
+      <form>
+        <!-- From Location (Dummy) -->
+        <div class="mb-4">
+          <label for="keberangkatan" class="block text-gray-700 font-medium mb-2">From</label>
+          <div class="flex justify-center items-end bg-gray-100 p-3 rounded-md relative">
+            <i class="ri-flight-takeoff-line text-gray-500 mr-3 text-xl"></i>
+            <input
+              type="text"
+              id="keberangkatan"
+              name="keberangkatan"
+              placeholder="Jakarta, CGK / Cairo, CAI"
+              class="bg-transparent w-full focus:outline-none text-gray-700"
+              value="Soekarno-Hatta International (CGK)"
+              autocomplete="off"
+            />
+          </div>
+
+          <!-- Dummy dropdown preview (static, no JS) -->
+          <div class="mt-2 bg-white border border-gray-200 rounded-md">
+            <ul>
+              <li class="px-4 py-2 text-gray-700">
+                <span class="font-bold">Soekarno-Hatta International (CGK)</span>
+                <span> - </span>
+                <span>Tangerang, Indonesia</span>
+              </li>
+              <li class="px-4 py-2 text-gray-700 border-t border-gray-100">
+                <span class="font-bold">Cairo International (CAI)</span>
+                <span> - </span>
+                <span>Cairo, Egypt</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- To Location (Dummy) -->
+        <div class="mb-4">
+          <label for="kedatangan" class="block text-gray-700 font-medium mb-2">To</label>
+          <div class="flex items-center bg-gray-100 p-3 rounded-md relative">
+            <i class="ri-flight-land-line text-gray-500 mr-3 text-xl"></i>
+            <input
+              type="text"
+              id="kedatangan"
+              name="kedatangan"
+              placeholder="Cairo, CAI / Jakarta, CGK"
+              class="bg-transparent w-full focus:outline-none text-gray-700"
+              value="Cairo International (CAI)"
+              autocomplete="off"
+            />
+          </div>
+
+          <!-- Dummy dropdown preview (static, no JS) -->
+          <div class="mt-2 bg-white border border-gray-200 rounded-md">
+            <ul>
+              <li class="px-4 py-2 text-gray-700">
+                <span class="font-bold">Cairo International (CAI)</span>
+                <span> - </span>
+                <span>Cairo, Egypt</span>
+              </li>
+              <li class="px-4 py-2 text-gray-700 border-t border-gray-100">
+                <span class="font-bold">Soekarno-Hatta International (CGK)</span>
+                <span> - </span>
+                <span>Tangerang, Indonesia</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Date -->
+        {% comment %} {% include "snippets/pilihtanggal.html" %} {% endcomment %}
+
+        <!-- Search Button -->
+        <div class="mt-4">
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-3 rounded-md font-medium text-lg hover:bg-blue-700"
+          >
+            Let's Search
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+{% comment %} <!-- Info Section start -->
+{% include "snippets/iklan.html" %}
+<!-- Info Section end -->
+
+<!-- Info Section start -->
+{% include "snippets/infosection.html" %}
+<!-- Info Section end -->
+
+<!-- Info faq start -->
+{% include "snippets/faq.html" %}
+<!-- Info faq end --> {% endcomment %}
+
+{% endblock %}
+
+{% block extra_js %}
+{% endblock %}
