@@ -65,7 +65,6 @@ THIRD_PARTY_APPS = [
 Init + install + run Tailwind:
 
 ```bash
-python manage.py tailwind init
 python manage.py tailwind install
 python manage.py tailwind start
 ```
