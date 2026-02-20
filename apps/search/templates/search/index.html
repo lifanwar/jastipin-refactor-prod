@@ -5,34 +5,38 @@
 
 {% block content %}
 
-
-
     <div class="flex flex-col justify-center items-center">
       <div
         class="md:hidden detail w-full md:h-[100px] bg-white justify-center items-center"
       >
         <!-- mobile -->
-        <div class="h-[100px] md:hidden flex items-center justify-between">
-          <div class="flex-col pl-8">
-            <div class="flex">
-              <h4>keberangkatan_code</h4>
-              <i class="ri-arrow-right-line"></i>
-              <h4>kedatangan_code</h4>
+        <div class="h-[100px] md:hidden w-full px-4 box-border">
+          <div class="h-[100px] flex items-center justify-between">
+            <!-- kiri: boleh mengecil -->
+            <div class="flex-col flex-1 min-w-0">
+              <div class="flex items-center gap-2">
+                <h4 class="truncate text-base">keberangkatan_code</h4>
+                <i class="ri-arrow-right-line"></i>
+                <h4 class="truncate text-base">kedatangan_code</h4>
+              </div>
+          
+              <div id="hasil-takeoff" class="mt-1">
+                <h4 class="truncate text-sm">format_takeoff_indonesia</h4>
+              </div>
             </div>
-            <div id='hasil-takeoff'>
-              <h4>format_takeoff_indonesia</h4>
+        
+            <!-- kanan: tombol kecil yang tidak memaksa lebar -->
+            <div class="ml-3 flex-shrink-0" x-data="{ open: false }">
+              <button
+                class="search bg-black rounded-full text-white px-3 py-1 hover:text-black hover:bg-white hover:border hover:border-current"
+                @click="open = true"
+                type="button"
+              >
+                <i class="ri-search-line"></i>
+                <span class="ml-1">Search</span>
+              </button>
+              {% comment %} {% include "snippets/popup_search.html" %} {% endcomment %}
             </div>
-          </div>
-          <div class="pr-8 cursor-pointer hover:text-[#4855DC]" x-data="{ open: false }" >
-            <div 
-              class="search bg-black rounded-full text-white px-3 py-1 hover:text-black hover:bg-white hover:border hover:border-current" 
-              @click="open = true">
-              <i class="ri-search-line"></i>
-              <a href="#">Search</a>
-            </div>
-            {% comment %} {% include "snippets/popup_search.html" %} {% endcomment %}
-          </div>
-
           </div>
         </div>
         <!-- desktop -->
@@ -124,38 +128,37 @@
       
      
       <!-- start Header start -->
-      <div class="shadow-md rounded-xl md:w-[70%] w-[90%] h-auto flex flex-col">
-        <div
-          class="head bg-[#FCFBFB] flex items-center justify-between w-full h-[5.3rem] rounded-t-lg"
-        >
-          <div class="ml-4 sm:ml-11 w-[150px] h-full flex items-center">
-            <h4>Company</h4>
-          </div>
-          <div class="w-[150px] h-full flex justify-center items-center">
-            <h4>Bagasi</h4>
-          </div>
-          <div class="w-[150px] h-full flex justify-center items-center">
-            <h4>Maskapai</h4>
-          </div>
-          <div
-          class="w-[150px] h-full flex justify-center items-center ml-4 sm:mr-11"
-          ></div>
-        </div>
+   <div class="shadow-md rounded-xl md:w-[70%] w-[90%] h-auto flex flex-col mx-auto">
+  <!-- Header bar sebagai grid 4 kolom -->
+  <div class="head bg-[#FCFBFB] grid grid-cols-4 place-items-center gap-x-6 w-full h-[5.3rem] rounded-t-lg">
+    <!-- Kolom 1: teks rata-kiri di dalam sel yang berada di tengah -->
+    <div class="w-full h-full flex items-center pl-6">
+      <h4 class="text-left">Company</h4>
+    </div>
+
+    <!-- Kolom 2: tengah -->
+    <div class="w-full h-full flex items-center justify-center">
+      <h4>Bagasi</h4>
+    </div>
+
+    <!-- Kolom 3: tengah -->
+    <div class="w-full h-full flex items-center justify-center">
+      <h4>Maskapai</h4>
+    </div>
+
+    <!-- Kolom 4: kanan (mis. tombol kosong/aksi) -->
+    <div class="w-full h-full flex items-center justify-end pr-6">
+      <!-- kosong atau ikon aksi -->
+    </div>
+  </div>
         <!-- start Header End -->
 
-      {% comment %} <div id="penerbangan-list">
-          {% for penerbangan in penerbangans %}
-          {% include "snippets/data_search.html" %}
-          {% endfor %} {% endcomment %}
+      <div id="penerbangan-list">
 
-        {% comment %} {% else %}
-        <div class="flex items-center">
-          <p class="text-gray-500 text-center">
-            Tidak ada penerbangan yang ditemukan dengan kriteria tersebut.
-          </p>
+          {% include "search/snippets/data_search.html" %}
+          {% comment %} {% endfor %}  {% endcomment %}
+
         </div>
-        
-        {% endif %} {% endcomment %}
       
 
       <!-- akhir list -->

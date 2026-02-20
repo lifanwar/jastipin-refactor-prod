@@ -1,0 +1,152 @@
+<div
+  id="penerbangan-item"
+  x-data="{ open: false }"
+  class="flex justify-between w-full h-[5.3rem] items-center"
+>
+  <div class="ml-4 sm:ml-11 w-[150px] h-full flex items-center">
+    <h4>Jastipin Company</h4>
+  </div>
+  <div class="w-[150px] h-full flex items-center justify-center">
+    <h4>100 Kg</h4>
+  </div>
+  <div class="w-[150px] h-full flex items-center justify-center">
+    <h4>Qatar Airways</h4>
+  </div>
+  <div class="w-[150px] h-full flex items-center justify-center sm:mr-11 mr-4">
+    <button class="flex"
+             @click="open = true"
+    >
+      <a
+        class="align py-1 px-3 items-center text-center text-white bg-[#4855DC] border border-[#4855DC] rounded-full active:text-violet-500 hover:bg-transparent hover:text-violet-600 hover:border-[#4855DC] focus:outline-none focus:ring"
+      >
+        Detail
+      </a>
+    </button>
+  </div>
+
+  <!-- Popup START -->
+  <div
+    x-show="open"
+    x-transition.opacity
+    class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+    @click="open = false"
+    style="display: none;"
+  >
+    <div
+      class="bg-white shadow-md rounded-lg w-full max-w-md p-6 relative"
+      @click.stop
+    >
+      <!-- Close Button (Icon) -->
+      <button
+        @click="open = false"
+        class="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+
+      <h1 class="text-blue-600 text-xl font-bold text-center mb-4">
+        Detail Bagasi
+      </h1>
+      <h2 class="text-blue-700 text-lg font-semibold text-center mb-6">
+        Jastipin Company
+      </h2>
+
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-gray-700 text-base font-semibold">
+            Indonesia ke Cairo
+          </h3>
+          <p class="text-gray-500 text-sm">28-10-2026</p>
+        </div>
+
+        <div class="relative">
+          <div
+            class="absolute left-3 top-0 h-full border-l-2 border-gray-300"
+          ></div>
+          <div class="flex items-center mb-4">
+            <div
+              class="z-40 w-6 h-6 bg-blue-600 rounded-full flex justify-center items-center text-white text-xs font-bold"
+            >
+              •
+            </div>
+            <div class="ml-4">
+              <p class="text-gray-700 font-semibold">
+                Indonesia - Jakarta
+              </p>
+              <p class="text-gray-500 text-sm">
+                Soekarno Hatta CGK - Cairo
+              </p>
+              <p class="text-gray-500 text-sm">23-02-2026</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div
+              class="z-40 w-6 h-6 bg-blue-600 rounded-full flex justify-center items-center text-white text-xs font-bold"
+            >
+              •
+            </div>
+            <div class="ml-4">
+              <p class="text-gray-700 font-semibold">Cairo</p>
+              <p class="text-gray-500 text-sm">
+                Cairo CAI - Mesir
+              </p>
+              <p class="text-gray-500 text-sm">Cairo Airport</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-gray-300 my-4" />
+
+        <div class="text-sm">
+          <p>
+            <span class="font-semibold">Bagasi:</span>
+            100 Kg
+          </p>
+          <p>
+            <span class="font-semibold">Maskapai:</span>
+            Qatar
+          </p>
+          <p>
+            <span class="font-semibold">Lokasi Indonesia:</span>
+            Tangerang
+          </p>
+          <p>
+            <span class="font-semibold">Lokasi Mesir:</span>
+            Darrasah
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="mt-6 text-center"
+      >
+        <a
+          href="https://wa.me/{{penerbangan.no_company}}?text=Halo,%20saya%20tertarik%20dengan%20bagasi%20anda."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-green-600 hover:bg-green-900 text-white px-4 py-2 rounded-full flex items-center justify-center mx-auto cursor-pointer"
+          @click="recordClick({{ penerbangan.id }})"
+        >
+          <!-- Icon -->
+          <i class="ri-whatsapp-fill mr-2 text-xl"></i>
+
+          <!-- Teks -->
+          <div class="text-white font-semibold">Contact</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
