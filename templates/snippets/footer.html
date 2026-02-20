@@ -1,6 +1,81 @@
 {% load tailwind_tags %}
 {% tailwind_css %}
 
-<footer>
-  
+<footer class="bg-gray-800 text-white mt-24">
+  <div class="container mx-auto px-4 py-8">
+    <!-- Top Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Section 1: Logo and Description -->
+      <div class="mt-4">
+        <h3 class="text-lg font-bold mb-4">Jastipin</h3>
+        <p class="text-gray-400 text-sm">
+          Temukan jastip impian Anda dengan mudah menggunakan platform Jastipin.
+          Nikmati kemudahan mencari jastip hanya dengan beberapa klik.
+        </p>
+      </div>
+
+      <!-- Section 2: Links -->
+      <div class="mt-4">
+        <h3 class="text-lg font-bold mb-4">Navigasi</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="#" class="text-gray-400 hover:text-gray-100"
+              >Hubungi Kami</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Section 3: Support -->
+      <div class="mt-4">
+        <h3 class="text-lg font-bold mb-4">Dukungan</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="#" class="text-gray-400 hover:text-gray-100">FAQ</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-400 hover:text-gray-100"
+              >Ketentuan Layanan</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Section 4: Social Media and Apps -->
+      <div class="mt-4">
+        <h3 class="text-lg font-bold mb-4">Ikuti Kami</h3>
+        <div class="flex space-x-4 mb-4">
+         <a href="#" class="text-gray-400 hover:text-gray-100" aria-label="Facebook" role="link">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <!-- simple stylized "f" in a circle -->
+                <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M14.5 8.5h-1.2c-.6 0-.9.4-.9.9v1h2.1l-.3 2h-1.8v5h-2v-5h-1.6v-2.1h1.6v-1.1c0-1.4.9-2.6 2.6-2.6h1.7v2z" fill="currentColor"/>
+              </svg>
+            </a>
+            
+            <a href="#" class="text-gray-400 hover:text-gray-100" aria-label="Twitter" role="link">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <!-- simple stylized bird: composed as a single path -->
+                <path fill="currentColor" d="M21 7.5c-.6.3-1.2.5-1.9.6.7-.4 1.2-1.1 1.4-1.9-.6.4-1.3.7-2.1.9C17.6 6 16.6 5.5 15.5 5.5c-1.8 0-3.2 1.5-3.2 3.3 0 .3 0 .6.1.9-2.7-.1-5.1-1.4-6.7-3.4-.3.6-.4 1.3-.4 2.1 0 1.4.7 2.6 1.8 3.3-.5 0-1-.1-1.4-.4 0 1.9 1.3 3.6 3 4-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.4 1.7 2.4 3.2 2.4-1.2 1-2.7 1.6-4.4 1.6-.3 0-.6 0-.9-.1 1.6 1 3.6 1.6 5.7 1.6 6.8 0 10.6-5.8 10.6-10.8v-.5c.7-.5 1.3-1.1 1.8-1.8-.7.3-1.4.5-2.1.6z"/>
+              </svg>
+            </a>
+            
+            <a href="#" class="text-gray-400 hover:text-gray-100" aria-label="Instagram" role="link">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <!-- simplified camera / lens mark for Instagram-like icon -->
+                <rect x="3" y="3" width="18" height="18" rx="5" ry="5" stroke="currentColor" stroke-width="1.6" fill="none"/>
+                <circle cx="12" cy="12" r="3.2" fill="currentColor"/>
+                <circle cx="17.3" cy="6.7" r="0.9" fill="currentColor"/>
+              </svg>
+            </a>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="mt-8 text-center text-gray-400 text-sm">
+      © 2025 Jastipin. Semua hak cipta dilindungi.
+    </div>
+  </div>
 </footer>
