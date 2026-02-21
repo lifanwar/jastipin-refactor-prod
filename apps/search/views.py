@@ -1,5 +1,4 @@
-from django.shortcuts import render
+from django.views.generic.base import TemplateView
 
-# Create your views here.
-def search(request):
-    return render(request, 'search/index.html')
+class search(TemplateView):
+    template_name = 'search/index.html'
